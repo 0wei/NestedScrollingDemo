@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.luowei.myapplication.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#ab7878" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#78aba4" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#83ab78" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#8b78ab" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#90ab78" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:background="#802121" />
+
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+
+    <Button app:layout_behavior="com.luowei.nestedscrollingdemo.behaviors.MyBehavior"
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center" />
+
+</android.support.design.widget.CoordinatorLayout>

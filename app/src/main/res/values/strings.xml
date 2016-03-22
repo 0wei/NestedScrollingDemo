@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">NestedScrollingDemo</string>
+    <string name="title_activity_behavior">BehaviorActivity</string>
+    <string name="title_activity_splash">SplashActivity</string>
 </resources>
